@@ -260,4 +260,12 @@
   .contact-heading {
     text-align: center;
   }
+
+  .customLineForm {
+  width: 250px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #3b82f6, transparent);
+  margin: 0 auto;
+  border-top-width: 0;
+}
 }
