@@ -1,0 +1,56 @@
+.realisation-section {
+  background-color: #000000;
+  background-image: 
+    radial-gradient(circle at top left, rgba(76, 124, 232, 0.3), transparent 20%),
+    radial-gradient(circle at bottom right, rgba(76, 124, 232, 0.3), transparent 20%);
+  height: 1136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: none; /*REMOVE WHEN WE HAVE PROJECT*/
+}
+
+.realisation-row {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.realisation-track {
+  display: inline-flex;
+  gap: 30px;
+  animation: scroll-left 30s linear infinite;
+}
+
+.realisation-row--reverse .realisation-track {
+  animation: scroll-right 30s linear infinite;
+}
+
+.realisation-image {
+  width: 620px;
+  height: 419px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

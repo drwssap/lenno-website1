@@ -1,0 +1,139 @@
+.nav-container {
+    display: flex;
+    gap: 9rem;
+    align-items: center;
+}
+
+/* Navigation links container */
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Call-to-action button */
+.btn.primary {
+  background-color: var(--main-button-color);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+.hamburger-wrapper {
+    display: none;
+    z-index: 10;
+}
+
+@media (max-width: 953px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 0.5rem;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        background-color: #0d0644;
+    }
+
+    .nav a {
+        display: flex;
+        
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: 0.3s ease;
+        border: none;
+        font-size: 50px;
+    }
+
+.nav a.active,
+.nav a:hover {
+  border: none;
+}
+
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem;
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        animation: fadeSlideDown 0.3s ease-in-out;
+    }
+
+   .nav.open .nav-item a {
+  animation: slideInLeft 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline-block;
+    }
+
+    .hamburger-wrapper {
+        display: block;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 954px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: inline-block;
+  }
+
+  /* Nav links */
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.nav a.active,
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform:  translateY(20px);
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    transform:  translateY(0);
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+
+
+

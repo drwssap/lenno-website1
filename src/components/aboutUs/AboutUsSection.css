@@ -1,0 +1,150 @@
+.about-section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: #000000;
+    background-image: radial-gradient(
+        circle at bottom right,
+        rgba(76, 124, 232, 0.3),
+        transparent 30%
+    );
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 518px;
+    padding-top: 7%;
+}
+
+/*Left Section*/
+.about-left {
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+    height: 291px;
+    gap: 12px;
+}
+
+.about-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    height: 33px;
+    background-color: #FFFFFF;
+    color: var(--main-button-color);
+    border-radius: 999px;
+    padding: 6px 16px 6px 12px;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.about-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.about-description {
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--main-button-color);
+    width: 169px;
+    height: 48px;
+    padding: 13px 20px 13px 20px;
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+/***************/
+
+.customLine {
+  width: 1px;
+  height: 176px; /* adjust as needed */
+  background: linear-gradient(to bottom, transparent, #3b82f6, transparent);
+  margin: 0 auto; /* center it horizontally */
+  border-top-width: 0;
+}
+
+
+/*Right Section*/
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 547px;
+    height: 176px;
+    position: relative;
+    gap: 76px;
+    align-items: left;
+}
+
+.about-stat-number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-button-color);
+}
+
+.about-stat-label {
+    letter-spacing: -0.5%;
+    line-height: 38px;
+    font-size: 26px;
+    font-weight: medium;
+}
+/***************/
+
+.about-blob {
+  position: absolute;
+  top: 0;
+  right: 421px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 1187px) {
+ .about-right {
+    display: none;
+ }
+  
+ .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }  
+}
+
+@media (max-width: 758px) {
+ .about-blob {
+    display: none;
+ }
+
+ .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }  
+}

@@ -1,0 +1,80 @@
+.services-section {
+    position: relative;
+    display: flex;
+    gap: 48px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #000000;
+    background-image: 
+    radial-gradient(circle at top left, rgba(76, 124, 232, 0.3), transparent 20%),
+    radial-gradient(circle at bottom right, rgba(76, 124, 232, 0.3), transparent 20%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+}
+
+.services-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-button-color);
+    border-color: var(--main-button-color);
+    border-width: 1px;
+    border-radius: 100px;
+    gap: 4px;
+    padding: 6px 16px 6px 12px;
+    width: 87px;
+    height: 33px;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: medium;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  width: 1320px;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.service-crystal {
+    width: 376px;
+    height: 376px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 513px) {
+ .services-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }  
+}
