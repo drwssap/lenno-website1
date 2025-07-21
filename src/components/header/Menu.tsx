@@ -46,13 +46,13 @@ export default function Menu() {
           </a>
         </div>
         <div className="nav-item bg-five mobile-only">
-          <a href="#" className="btn primary" onClick={handleLinkClick}>
+          <a href="#contact" className="btn primary" onClick={handleLinkClick}>
             Commencer votre projet →
           </a>
         </div>
       </nav>
 
-      <a href="#" className="btn primary desktop-only">
+      <a href="#contact" className="btn primary desktop-only">
         Commencer votre projet →
       </a>
     </div>

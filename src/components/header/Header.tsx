@@ -54,7 +54,7 @@ export default function Header() {
             <br />
             et les prestataires de services locaux.
           </p>
-          <a href="#" className="btn secondary">
+          <a href="#contact" className="btn secondary">
             Commencer votre projet →
           </a>
         </div>
