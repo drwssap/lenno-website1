@@ -101,7 +101,7 @@ export default function ContactUsSection() {
             />
           </div>
           <div>
-            <span className="title-input">Nom de l'entreprise</span>
+            <span className="title-input">Nom de l&#39;entreprise</span>
             <input
               type="text"
               name="user_company"
