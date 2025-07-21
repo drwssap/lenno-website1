@@ -70,7 +70,7 @@
 }
 
 
-@media (max-width: 513px) {
+@media (max-width: 647px) {
  .services-header {
     display: flex;
     justify-content: center;

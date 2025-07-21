@@ -93,7 +93,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 547px;
     height: 176px;
     position: relative;
     gap: 76px;
@@ -124,7 +123,7 @@
   opacity: 0.9;
 }
 
-@media (max-width: 1187px) {
+@media (max-width: 1294px) {
  .about-right {
     display: none;
  }
