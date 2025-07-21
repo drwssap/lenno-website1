@@ -3,23 +3,25 @@ import "./ServicesSection.css";
 const services = [
   {
     img: "/images/uiux.png",
-    title: "Website Design",
-    description: "Modern and responsive designs tailored to your brand.",
+    title: "Conception de site web",
+    description: "Des designs modernes et responsives adaptés à votre marque.",
   },
   {
     img: "/images/editor.png",
-    title: "Website Development",
-    description: "From single-page sites to dynamic platforms.",
+    title: "Développement site web",
+    description:
+      "De sites d'une seule page à des plateformes dynamiques a plusieurs pages.",
   },
   {
     img: "/images/gear.png",
-    title: "Maintenance & Support",
-    description: "Ongoing support to keep your site fast and secure.",
+    title: "Maintenance et support",
+    description:
+      "Un support continu 24/7 pour garder votre site rapide et sécurisé.",
   },
   {
     img: "/images/server.png",
-    title: "Hosting Setup",
-    description: "Reliable hosting and domain configuration included.",
+    title: "Hébergement",
+    description: "Hébergement fiable et configuration de domaine inclus.",
   },
 ];
 
@@ -28,7 +30,7 @@ export default function ServicesSection() {
     <section className="services-section" id="services">
       <div className="services-header">
         <span className="section-tag">Services</span>
-        <h2 className="section-title">Services We Provide</h2>
+        <h2 className="section-title">Services que nous offrons</h2>
       </div>
       <div className="services-container">
         <div className="services-grid">

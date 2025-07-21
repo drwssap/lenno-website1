@@ -35,27 +35,27 @@ export default function ContactUsSection() {
       <div className="contact-left">
         <div className="contact-header">
           <span className="contact-badge">Contact</span>
-          <h2 className="contact-heading">Contact With Us</h2>
+          <h2 className="contact-heading">Nous joindre</h2>
         </div>
         <div className="contact-info">
           <div className="contact-item">
             <img src="/images/mail.png" className="icon-mail" alt="" />
             <div className="info">
-              <h4 className="title">Email</h4>
+              <h4 className="title">Courriel</h4>
               <p className="info-response">info@lenno.ca</p>
             </div>
           </div>
           <div className="contact-item">
             <img src="/images/location.png" className="icon-location" alt="" />
             <div className="info">
-              <h4 className="title">Office</h4>
+              <h4 className="title">Bureau</h4>
               <p className="info-response">Saint-hippolyte, Canada</p>
             </div>
           </div>
           <div className="contact-item">
             <img src="/images/call.png" className="icon-phone" alt="" />
             <div className="info">
-              <h4 className="title">Phone</h4>
+              <h4 className="title">téléphone</h4>
               <p className="info-response">(+1) 23 456 789 369</p>
             </div>
           </div>
@@ -69,12 +69,12 @@ export default function ContactUsSection() {
       />
 
       <div className="contact-right">
-        <h3 className="form-title">Contact form</h3>
+        <h3 className="form-title">Prêt à travailler ensemble ?</h3>
         <hr className="customLineForm" />
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-row">
             <div>
-              <span className="title-input">Name</span>
+              <span className="title-input">Nom complet</span>
               <input
                 type="text"
                 name="user_name"
@@ -83,7 +83,7 @@ export default function ContactUsSection() {
               />
             </div>
             <div>
-              <span className="title-input">Phone Number</span>
+              <span className="title-input">Numéro de téléphone</span>
               <input
                 type="text"
                 name="user_phone"
@@ -92,7 +92,7 @@ export default function ContactUsSection() {
             </div>
           </div>
           <div>
-            <span className="title-input">Email</span>
+            <span className="title-input">Courriel professionnel</span>
             <input
               type="email"
               name="user_email"
@@ -101,7 +101,7 @@ export default function ContactUsSection() {
             />
           </div>
           <div>
-            <span className="title-input">Company</span>
+            <span className="title-input">Nom de l'entreprise</span>
             <input
               type="text"
               name="user_company"
@@ -109,11 +109,11 @@ export default function ContactUsSection() {
             />
           </div>
           <div>
-            <span className="title-input">Message</span>
+            <span className="title-input">Détails de votre projet</span>
             <textarea name="message" className="input-form-row3" required />
           </div>
           <button type="submit" className="submit-button">
-            Submit <span className="arrow">→</span>
+            Envoyer <span className="arrow">→</span>
           </button>
         </form>
       </div>

@@ -42,19 +42,20 @@ export default function Header() {
         </div>
 
         <div className="hero-content">
-          <span className="badge">100% Trusted</span>
+          <span className="badge">100 % Fiable</span>
           <h1>
-            Building Your Web
+            Construire un site web pensé
             <br />
-            Presence With Precision
+            pour durer.
           </h1>
           <p>
-            Custom Websites For Construction, Landscaping,
+            Sites web sur mesure pour les entreprises de construction,
+            d’aménagement paysager
             <br />
-            And Local Service Providers.
+            et les prestataires de services locaux.
           </p>
           <a href="#" className="btn secondary">
-            Start Your Project →
+            Commencer votre projet →
           </a>
         </div>
       </div>

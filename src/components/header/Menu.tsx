@@ -21,11 +21,11 @@ export default function Menu() {
       <nav className={`nav ${isOpen ? "open" : ""}`}>
         <div className="nav-item bg-one">
           <a href="#" className="active">
-            Home
+            Accueil
           </a>
         </div>
         <div className="nav-item bg-two">
-          <a href="#about">About Us</a>
+          <a href="#about">À propos</a>
         </div>
         <div className="nav-item bg-three">
           <a href="#services">Services</a>
@@ -35,14 +35,14 @@ export default function Menu() {
         </div>
         <div className="nav-item bg-five mobile-only">
           <a href="#" className="btn primary">
-            Start Your Project →
+            Commencer votre projet →
           </a>
         </div>
       </nav>
 
       {/* Desktop-only button (optional) */}
       <a href="#" className="btn primary desktop-only">
-        Start Your Project →
+        Commencer votre projet →
       </a>
     </div>
   );

@@ -8,15 +8,15 @@ export default function AboutUs() {
       <div className="about-container">
         {/* Left Content */}
         <div className="about-left">
-          <span className="about-tag">About Us</span>
-          <h2 className="about-title">Who We Are</h2>
+          <span className="about-tag">À propos</span>
+          <h2 className="about-title">Qui sommes-nous</h2>
           <p className="about-description">
-            We’re a web agency helping businesses in the Laurentides region
-            establish a strong online presence. From clean code to clean design.
-            We handle it all.
+            Nous sommes une agence web qui aide les entreprises de la région des
+            Laurentides à établir une forte présence en ligne. Du code propre au
+            design soigné, nous nous occupons de tout.
           </p>
           <a href="#" className="about-button">
-            Learn More →
+            En savoir plus →
           </a>
         </div>
 
@@ -25,16 +25,16 @@ export default function AboutUs() {
           <div className="about-stat">
             <h3 className="about-stat-number">868+</h3>
             <p className="about-stat-label">
-              Satisfied clients <br />
-              worldwide.
+              Des clients satisfaits <br />
+              partout dans le monde.
             </p>
           </div>
           <hr className="customLine" />
           <div className="about-stat bordered">
             <h3 className="about-stat-number">1252+</h3>
             <p className="about-stat-label">
-              Successfully <br />
-              completed
+              projets réalisés <br />
+              avec succès
             </p>
           </div>
         </div>

@@ -14,11 +14,10 @@ export default function ServiceCard({
   return (
     <div className="service-card">
       <img src={img} alt={title} className="service-icon" />
-      <hr className="customLineServiceCard" />
       <div className="service-content">
         <h3 className="service-title">{title}</h3>
         <p className="service-description">{description}</p>
-        <button className="learn-more">Learn More →</button>
+        <button className="learn-more">En savoir plus →</button>
       </div>
     </div>
   );

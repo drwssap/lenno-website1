@@ -36,9 +36,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 92px;
+    width: 100px;
     height: 33px;
-    background-color: #FFFFFF;
+    border-width: 1px;
+    border-color: var(--main-button-color);
     color: var(--main-button-color);
     border-radius: 999px;
     padding: 6px 16px 6px 12px;
@@ -64,7 +65,7 @@
     align-items: center;
     border-radius: 30px;
     background-color: var(--main-button-color);
-    width: 169px;
+    width: 220px;
     height: 48px;
     padding: 13px 20px 13px 20px;
     transition: all 0.3s ease;

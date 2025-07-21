@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Lenno | Precision Web Presence",
   description:
     "Custom websites for local businesses like construction and landscaping.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

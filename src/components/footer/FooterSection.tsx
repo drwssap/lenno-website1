@@ -31,10 +31,10 @@ const FooterSection = () => {
 
       <ul className="footer-nav">
         <li>
-          <a href="#">Home</a>
+          <a href="#">Accueil</a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a href="#about">À propos</a>
         </li>
         <li>
           <a href="#services">Services</a>

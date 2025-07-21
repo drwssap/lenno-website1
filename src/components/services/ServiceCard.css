@@ -1,17 +1,20 @@
 .service-card {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #201A48;
-    border-radius: 16px;
-    border-color: var(--main-button-color);
-    border-width: 1px; 
-    width: 312px;
-    height: 319px;
-    gap: 10px;
-    padding: 24px;
-    transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space vertically */
+  align-items: center;
+  background-color: #201A48;
+  border-radius: 16px;
+  border: 1px solid var(--main-button-color);
+  width: 312px;
+  height: 319px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.service-icon {
+    margin-bottom: 10px;
 }
 
 .service-card:hover {
@@ -19,30 +22,29 @@
     box-shadow: 0 0 20px var(--main-button-color);
 }
 
-.customLineServiceCard {
-  width: 176px;
-  height: 1px; /* adjust as needed */
-  background: linear-gradient(to right, transparent, #3b82f6, transparent);
-  margin: 0 auto; /* center it horizontally */
-  border-top-width: 0;
-}
-
 .service-content {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .service-title {
+    text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 32px;
+    padding-top: 10px;
 }
 
 .service-description {
-    font-size: 16px;
-    line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
+  flex-grow: 1; /* Makes description expand if needed */
+  overflow-wrap: break-word;
 }
 
 .learn-more {
@@ -58,9 +60,10 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    width: 169px;
+    width: 190px;
     height: 48px;
     transition: all 0.3s ease;
+    margin-top: auto; /* Push button to bottom */
 }
 
 .learn-more:hover {
