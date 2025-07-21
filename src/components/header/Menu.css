@@ -85,7 +85,7 @@
     }
 
     .btn.primary {
-      font-size: 25px
+      font-size: 19px
     }
 
     .desktop-only {
@@ -140,6 +140,9 @@
   }
 }
 
-
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 
 
