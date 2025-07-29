@@ -1,7 +1,7 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribute space vertically */
+  justify-content: space-evenly;
   align-items: center;
   background-color: #201A48;
   border-radius: 16px;

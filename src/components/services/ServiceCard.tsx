@@ -17,7 +17,7 @@ export default function ServiceCard({
       <div className="service-content">
         <h3 className="service-title">{title}</h3>
         <p className="service-description">{description}</p>
-        <button className="learn-more">En savoir plus →</button>
+        {/* <button className="learn-more">En savoir plus →</button> */}
       </div>
     </div>
   );

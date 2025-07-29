@@ -15,9 +15,9 @@ export default function AboutUs() {
             Laurentides à établir une forte présence en ligne. Du code propre au
             design soigné, nous nous occupons de tout.
           </p>
-          <a href="#" className="about-button">
+          {/* <a href="#" className="about-button">
             En savoir plus →
-          </a>
+          </a> */}
         </div>
 
         {/* Right Content */}
