@@ -56,7 +56,7 @@ export default function ContactUsSection() {
             <img src="/images/call.png" className="icon-phone" alt="" />
             <div className="info">
               <h4 className="title">téléphone</h4>
-              <p className="info-response">(+1) 23 456 789 369</p>
+              <p className="info-response">+1 (514) 916-1799</p>
             </div>
           </div>
         </div>

@@ -42,7 +42,6 @@ export default function Header() {
         </div>
 
         <div className="hero-content">
-          <span className="badge">100 % Fiable</span>
           <h1>
             Construire un site web pensé
             <br />
