@@ -47,6 +47,19 @@ export default function Header() {
             <br />
             pour durer.
           </h1>
+          {/* Visually hidden for SEO */}
+          <h2
+            style={{
+              position: "absolute",
+              left: "-9999px",
+              top: "auto",
+              width: "1px",
+              height: "1px",
+              overflow: "hidden",
+            }}
+          >
+            Lenno - Agence web Saint-Hippolyte, création de sites web sur mesure
+          </h2>
           <p>
             Sites web sur mesure pour les entreprises de construction,
             d’aménagement paysager
