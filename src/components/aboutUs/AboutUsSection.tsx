@@ -70,10 +70,12 @@ export default function AboutUs() {
           <span className="about-tag">À propos</span>
           <h2 className="about-title">Qui sommes-nous</h2>
           <p className="about-description">
-            Nous sommes une agence web qui aide les entreprises de la région des
-            Laurentides à établir une forte présence en ligne. Du code propre au
-            design soigné, nous nous occupons de tout.
+            Nous sommes Lenno, une agence web à Saint-Hippolyte, spécialisée
+            dans la création de sites internet modernes, optimisés SEO et sur
+            mesure. Nous aidons les entreprises locales à établir une forte
+            présence en ligne grâce à un code propre et un design soigné.
           </p>
+
           {/* <a href="#" className="about-button">
             En savoir plus → 
           </a> */}

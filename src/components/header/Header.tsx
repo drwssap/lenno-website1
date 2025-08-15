@@ -61,10 +61,9 @@ export default function Header() {
             Lenno - Agence web Saint-Hippolyte, création de sites web sur mesure
           </h2>
           <p>
-            Sites web sur mesure pour les entreprises de construction,
-            d’aménagement paysager
-            <br />
-            et les prestataires de services locaux.
+            Sites web sur mesure pour les entreprises, optimisés SEO, modernes,
+            rapides et entièrement <br />
+            personnalisables pour renforcer votre présence en ligne.
           </p>
           <a href="#contact" className="btn secondary">
             Commencer votre projet →

@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Lenno | Agence web Saint-Hippolyte | Precision Web Presence",
   description:
-    "Lenno, agence web à Saint-Hippolyte, spécialisée dans la création de sites web modernes et sur mesure pour entreprises locales, construction et aménagement paysager.",
+    "Lenno, agence web à Saint-Hippolyte, crée des sites internet modernes, optimisés SEO et sur mesure pour entreprises locales, construction et aménagement paysager.",
   keywords: [
     "Lenno",
     "agence web",

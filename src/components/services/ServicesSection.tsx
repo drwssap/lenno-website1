@@ -4,24 +4,26 @@ const services = [
   {
     img: "/images/uiux.png",
     title: "Conception de site web",
-    description: "Des designs modernes et responsives adaptés à votre marque.",
+    description:
+      "Des designs modernes et responsives adaptés à votre marque, optimisés pour SEO et pensés pour une expérience utilisateur exceptionnelle.",
   },
   {
     img: "/images/editor.png",
     title: "Développement site web",
     description:
-      "De sites d'une seule page à des plateformes dynamiques a plusieurs pages.",
+      "De sites d'une seule page à des plateformes dynamiques à plusieurs pages, entièrement personnalisées, performantes et sécurisées pour répondre à vos besoins.",
   },
   {
     img: "/images/gear.png",
     title: "Maintenance et support",
     description:
-      "Un support continu 24/7 pour garder votre site rapide et sécurisé.",
+      "Un support continu 24/7 pour garder votre site rapide, sécurisé, fiable, à jour et performant en toutes circonstances.",
   },
   {
     img: "/images/server.png",
     title: "Hébergement",
-    description: "Hébergement fiable et configuration de domaine inclus.",
+    description:
+      "Hébergement fiable et configuration de domaine inclus, avec support technique rapide, sécurité renforcée, sauvegardes régulières et disponibilité maximale garantie.",
   },
 ];
 
