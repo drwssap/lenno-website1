@@ -23,7 +23,7 @@ export default function AboutUs() {
         {/* Right Content */}
         <div className="about-right">
           <div className="about-stat">
-            <h3 className="about-stat-number">868+</h3>
+            <h3 className="about-stat-number">50+</h3>
             <p className="about-stat-label">
               Des clients satisfaits <br />
               partout dans le monde.
@@ -31,7 +31,7 @@ export default function AboutUs() {
           </div>
           <hr className="customLine" />
           <div className="about-stat bordered">
-            <h3 className="about-stat-number">1252+</h3>
+            <h3 className="about-stat-number">100+</h3>
             <p className="about-stat-label">
               projets réalisés <br />
               avec succès
