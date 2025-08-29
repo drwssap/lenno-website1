@@ -52,8 +52,7 @@ export default function ContactUsSection() {
     <section className="contact-section" id="contact" ref={sectionRef}>
       <div className="contact-left">
         <div className="contact-header">
-          <span className="contact-badge">Contact</span>
-          <h2 className="contact-heading">Nous joindre</h2>
+          <h2 className="contact-heading">Contact</h2>
         </div>
         <div className="contact-info">
           <div className="contact-item">

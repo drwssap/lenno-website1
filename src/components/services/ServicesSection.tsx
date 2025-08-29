@@ -53,7 +53,6 @@ export default function ServicesSection() {
   return (
     <section className="services-section" id="services" ref={sectionRef}>
       <div className="services-header">
-        <span className="section-tag">Services</span>
         <h2 className="section-title">Services que nous offrons</h2>
       </div>
       <div className="services-container">
