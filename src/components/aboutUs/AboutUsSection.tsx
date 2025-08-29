@@ -108,7 +108,7 @@ export default function AboutUs() {
       <img
         src="/images/blob.png"
         alt="Blob Decoration"
-        className="about-blob"
+        className={`about-blob${visible ? " animate-blob" : ""}`}
       />
     </section>
   );

@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import ServiceCard from "./ServiceCard";
 import "./ServicesSection.css";
 const services = [
@@ -28,8 +31,27 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="services-section" id="services">
+    <section className="services-section" id="services" ref={sectionRef}>
       <div className="services-header">
         <span className="section-tag">Services</span>
         <h2 className="section-title">Services que nous offrons</h2>
@@ -50,7 +72,7 @@ export default function ServicesSection() {
       <img
         src="/images/crystal.png"
         alt="Crystal Decoration"
-        className="service-crystal"
+        className={`service-crystal${visible ? " animate-crystal" : ""}`}
       />
     </section>
   );

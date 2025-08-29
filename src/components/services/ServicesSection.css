@@ -83,3 +83,18 @@
     height: 230px;
  }
 }
+
+@keyframes crystalSlideIn {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 0.9;
+  }
+}
+
+.animate-crystal {
+  animation: crystalSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

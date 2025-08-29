@@ -117,10 +117,11 @@
 .about-blob {
   position: absolute;
   top: 0;
-  right: 421px;
+  right: -200px; /* Start off-screen */
   z-index: 0;
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0;
+  transition: none;
 }
 
 @media (max-width: 1294px) {
@@ -147,4 +148,19 @@
     align-items: center;
     text-align: center;
  }  
+}
+
+@keyframes blobSlideIn {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
+    right: 421px;
+    opacity: 0.9;
+  }
+}
+
+.animate-blob {
+  animation: blobSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }

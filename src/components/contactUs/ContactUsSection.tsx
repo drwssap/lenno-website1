@@ -1,11 +1,29 @@
 "use client";
 
 import "./ContactUsSection.css";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactUsSection() {
   const form = useRef<HTMLFormElement>(null);
+  const sectionRef = useRef(null);
+
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+    return () => observer.disconnect();
+  }, []);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -31,7 +49,7 @@ export default function ContactUsSection() {
   };
 
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section" id="contact" ref={sectionRef}>
       <div className="contact-left">
         <div className="contact-header">
           <span className="contact-badge">Contact</span>
@@ -65,7 +83,7 @@ export default function ContactUsSection() {
       <img
         src="/images/sphere.png"
         alt="Sphere Decoration"
-        className="form-sphere"
+        className={`form-sphere${visible ? " animate-sphere" : ""}`}
       />
 
       <div className="contact-right">

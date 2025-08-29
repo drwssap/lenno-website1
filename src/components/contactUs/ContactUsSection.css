@@ -8,6 +8,7 @@
     background-image: 
     radial-gradient(circle at bottom left, rgba(76, 124, 232, 0.3), transparent 20%);
     position: relative;
+    overflow-x: hidden
 }
 
 /* Left Contact Section */
@@ -202,13 +203,29 @@
     background-color: #fff;
 }
 
-.form-sphere {
-    position: absolute;
-    bottom: 154px;
+@keyframes sphereSlideIn {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
     right: 800px;
-    z-index: -1;
-    pointer-events: none;
     opacity: 0.9;
+  }
+}
+
+.form-sphere {
+  position: absolute;
+  bottom: 154px;
+  right: -200px; /* Start off-screen */
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  transition: none;
+}
+
+.animate-sphere {
+  animation: sphereSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @media (max-width: 1129px) {

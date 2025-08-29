@@ -11,6 +11,30 @@
   align-items: center;
 }
 
+.nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.2em;
+  width: 0;
+  height: 2px;
+  background: var(--main-button-color, #fff);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+/* Animate underline on hover and active */
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
 /* Call-to-action button */
 .btn.primary {
   background-color: var(--main-button-color);
@@ -120,11 +144,7 @@
   transition: 0.3s ease;
 }
 
-.nav a.active,
-.nav a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  
-}
+
 }
 
 @keyframes slideInLeft {
