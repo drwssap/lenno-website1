@@ -66,7 +66,7 @@ export default function ContactUsSection() {
             <img src="/images/location.png" className="icon-location" alt="" />
             <div className="info">
               <h4 className="title">Bureau</h4>
-              <p className="info-response">Saint-hippolyte, Canada</p>
+              <p className="info-response">Saint-hippolyte, Québec</p>
             </div>
           </div>
           <div className="contact-item">
