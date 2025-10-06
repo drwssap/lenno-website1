@@ -69,11 +69,16 @@ export default function AboutUs() {
         <div className="about-left">
           <h2 className="about-title">Qui sommes-nous</h2>
           <p className="about-description">
-            Nous sommes Lenno, une agence web de Saint-Hippolyte, spécialisée
-            dans la création de sites internet modernes, optimisés SEO et sur
-            mesure. Nous aidons les entreprises locales à établir une forte
-            présence en ligne grâce à une stratégie SEO optimale, un code propre
-            et un design soigné.
+            <div className="first-line">
+              Nous sommes Lenno, une agence web de Saint-Hippolyte, spécialisée
+              dans la création de sites internet modernes, optimisés SEO et sur
+              mesure.
+            </div>
+            <div>
+              Nous aidons les entreprises locales à établir une forte présence
+              en ligne grâce à une stratégie SEO optimale, un code propre et un
+              design soigné.
+            </div>
           </p>
 
           {/* <a href="#" className="about-button">
