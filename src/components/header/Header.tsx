@@ -35,7 +35,11 @@ export default function Header() {
 
       <div className="content-wrapper">
         <div className="top-bar">
-          <div className="logo">Lenno</div>
+          <img
+            src="/images/lenno_logo_white.png"
+            alt="Lenno Logo"
+            className="lenno-logo"
+          />
 
           {/* ✅ Here's your reusable nav menu */}
           <Menu />

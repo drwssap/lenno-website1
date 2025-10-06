@@ -1,5 +1,5 @@
 :root {
-  --main-button-color: #4C7CE8;
+  --main-button-color: #4c7ce8;
 }
 
 .header {
@@ -11,6 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.lenno-logo {
+  height: 70px;
 }
 
 .grid-overlay {
@@ -25,8 +29,20 @@
   pointer-events: none;
 
   /* Fade out left & right edges */
-  -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
-  mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
 }
 
 .grid-square {
@@ -107,15 +123,14 @@
 }
 
 .btn.secondary:hover {
-    color: #001F3F;
-    background-color: #fff;
+  color: #001f3f;
+  background-color: #fff;
 }
 
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 40px;
   }
-  
 }
 
 @media (max-width: 768px) {
